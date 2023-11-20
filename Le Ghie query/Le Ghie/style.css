@@ -1,0 +1,214 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    font-weight: 100px;
+}
+
+/* NAVBAR */
+
+nav {
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s;
+    padding-bottom: 0;
+    margin-right: 10px;
+    color: gray;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px; 
+    background-color: #539C38; 
+    transition: all 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* CONTENUTO */
+
+.slogan{
+    text-align: center;
+    font-family: Dancing Script; 
+    font-size: 35pt;
+}
+
+.desc{
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 18pt;
+    color: black;
+}
+
+.scopri{
+    font-size: 32pt;
+    text-align: center;
+}
+
+.nascosto {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+}
+
+/* HOME */
+
+.content_img_home {
+    display: flex;
+    margin-bottom: 10%; /* Spazio tra le immagini */
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.content_img_home img, video {
+    margin-right: 10px;
+    width: 18%;
+}
+
+.content_paragrafi {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.paragraph {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.verticale{
+    display: none;
+}
+
+.orizzontale{
+    display: block;
+}
+
+.content_storia {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.content_storia_div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.content_storia_div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-image {
+    width: 40%;
+}
+
+/* RISTORANTE */
+
+.desc_ristorante {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.right {
+    text-align: left;
+}
+
+.opt_ristorante {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.opt_ristorante img {
+    padding: 50px;
+}
+
+.img_rest {
+    width: 33%;
+    border-radius: 50%;
+}
+
+
+/* CAMERE */
+.img_camera_main {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img_camera {
+    display: flex;
+    margin: 0 auto;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.paragrafo_camera {
+    display: flex;
+    flex-direction: column; /* Imposta il layout a colonna per gli elementi div */
+    justify-content: center; /* Allinea verticalmente al centro */
+    align-items: center; /* Allinea orizzontalmente al centro */
+    text-align: center;
+    margin: 2%;
+}
+
+
+.img_camera img {
+    width: 30%;
+    padding: 7px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 80px;
+    border-top: 1px solid transparent; /* Bordo trasparente con spessore di 1px */
+    border-image: linear-gradient(to left, transparent, #539C38, transparent) 1; /* Utilizza un gradiente come bordo sfumato */
+    font-size: 13pt;
+}
+
+.finale {
+    font-size: 13pt;
+}
+
+.footer a {
+    margin-right: 10px;
+}

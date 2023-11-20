@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Ghie | Country House & Home Restaurant</title>
+
+  <!-- Carica i font da Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Carica librerie di icone e stili di Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Carica la mappa di Google Maps -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvKHoPGWJrcHYWLu_JyBT-86aYlP7SxC8&callback=initMap" async defer></script> -->
+
+  <!-- Carica librerie JavaScript (jQuery e Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Carica il tuo script personalizzato -->
+  <script src="index.js"></script>
+
+  <!-- Carica i fogli di stile -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
+  <!-- Imposta l'icona del sito -->
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div class="content">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo" style="font-family: Dancing Script; font-size: 28pt; color: #539C38;">
+          Country House Le Ghie
+        </a>
+        <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Camere</a></li>       
+            <li class="nav-item"><a class="nav-link" href="#">Home Restaurant</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Territorio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Storia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fondo">Contatti</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HOME -->
+    <div id="content_home">
+      <div class="container-fluid" style="padding: 0px;">
+        <img src="img/home-vista.jpg" style="width: 100%; height: auto;" alt="" class="home-vista">
+      </div>
+      <div style="width: 85%;padding: 50px;margin: 0 auto;">
+        <h2 class="slogan">"Vicino a casa, lontano da tutto"
+        </h2>
+        <br>
+        <p class="desc intro">Scopri il fascino di un rifugio ai piedi delle Langhe, in un borghetto sospeso
+          nel tempo, <br> dove cultura,
+          tradizione e cucina piemontese si intrecciano magistralmente.</p>
+      </div>
+      <div class="content_img_home">
+        <img src="img/home1.jpg" class="imgs">
+        <img src="img/home2.jpg" class="imgs">
+        <video autoplay loop muted style="width: 18%; margin-right: 10px;">
+          <source src="img/home17.mp4" type="video/mp4">
+          Il tuo browser non supporta il tag video.
+        </video>        
+        <img src="img/home4.jpg" class="imgs">
+      </div>
+      
+      <div class="content_paragrafi">
+        <div class="paragraph">
+          <h4 class="scopri">Home Restaurant</h4>
+            <p class="desc">Vivi a pieno l'esperienza tramite i sapori culinari tipici del territorio</p>
+        </div>
+        <img src="img/home5.jpg" style="width: 50%;">
+      </div>
+      <div class="content_paragrafi">
+        <!-- <img src="img/video2.gif" style="width: 50%;" class="orizzontale"> -->
+        <video autoplay loop muted class="orizzontale" style="width: 50%; margin-right: 10px;"><!-- -->
+          <source src="img/home8.mp4" type="video/mp4">
+          Il tuo browser non supporta il tag video.
+        </video>    
+        <div class="paragraph"  style="text-align: right;">
+          <h4 class="scopri">Camere e Alloggi</h4>
+          <p class="desc">Cogli l'opportunità di un soggiorno immerso nel silenzio e nella tranquillità</p>
+        </div>
+        <video autoplay loop muted class="verticale" style="width: 50%; margin-right: 10px;"><!-- -->
+          <source src="img/home8.mp4" type="video/mp4">
+          Il tuo browser non supporta il tag video.
+        </video>
+      </div>
+      <br>
+      <h4 class="scopri">Territorio</h4>
+      <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel" style="width: 60%; margin: 0 auto; margin-bottom: 10%;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="d-flex">
+              <img src="img/home10.JPG" class="d-block w-50 small-image" alt="...">
+              <img src="img/home13.jpg" class="d-block w-50 small-image" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-family: Dancing Script;">Vivi il fascino della montagna</h2>
+              <p>In tutte le stagioni...</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="d-flex">
+              <img src="img/home11.JPG" class="d-block w-50 small-image" alt="...">
+              <img src="img/home12.JPG" class="d-block w-50 small-image" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-family: Dancing Script;">Assapora i prodotti locali</h2>
+              <p>Castagne, vini, tartufi...</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="d-flex">
+              <img src="img/home15.jpg" class="d-block w-50 small-image" alt="...">
+              <img src="img/home14.jpg" class="d-block w-50 small-image" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-family: Dancing Script;">Visita le langhe</h2>
+              <p>I vigneti, paesaggi e colline formano il nostro patrimonio</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="d-flex">
+              <img src="img/home16.jpg" class="d-block w-50 small-image" alt="...">
+              <img src="img/home9.jpg" class="d-block w-50 small-image" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-family: Dancing Script;">Attività e cultura</h2>
+              <p>Giri in mongolfiera, musei e tante altre attività...</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+      <div class="content_storia">
+        <div class="content_storia_div">
+            <h4 class="scopri" style="text-align: left;  margin-bottom: 20px;">La nostra Storia</h4>
+            <img src="img/home6.JPG" class="imgs">
+        </div>
+        <div class="content_storia_div">
+            <img src="img/home7.JPG" class="orizzontale imgs">
+            <div class="son" style="display: flex; justify-content: center; align-items: center;  height: 50vh;">
+              <p class="desc intro">La narrazione unica del filo storico e culturale che ha portato piccolo borghetto a diventare il centro del nostro progetto...</p>
+            </div>
+            <img src="img/home7.JPG" class="verticale imgs">
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="content_camere" class="nascosto">
+        <div class="paragrafo_camera" style="width: 70%; margin: 0 auto;">
+          <h1 style="font-size: 38pt; font-family: Dancing Script; padding-top: 30px; text-align: center;">Camere con cucina</h1>
+          <br>
+          <p>
+            Qua sotto trovate le nostre 4 suite con ampia cucina attrezzata con piano ad induzione, divano-letto con due posti, bagno, balcone vista giardino e Langhe, aria condizionata, tende oscuranti, pavimento marmolizzato,
+            riscaldamento a pavimento, VMC (ventilazione meccanica controllata) per una migliore qualità dell'aria, 
+            una sontuosa camera da letto con tv e letto matrimoniale con materasso e cuscino antiallergeni in latèx memory.  
+          </p>
+        </div>
+        <div class="title"><h1 style="font-family: Dancing Script; display: none; text-align: center;" class="verticale">Monviso</h1></div>
+        <div class="img_camera_main">
+          <div>
+            <div class="img_camera blockOne">
+              <img src="img/camera1.jpg" alt="" style="width: 65%;">
+              <img src="img/camera4.jpg" alt="" style="width: 35%;">
+            </div>
+            <div class="paragrafo_camera verticale" style="display: none;">
+
+              <p>
+                Il Monviso, con la sua maestosa e inconfondibile forma piramidale, incarna la bellezza senza tempo delle Alpi italiane.
+                Il colore azzurro chiaro della camera richiama la vetta, soprattutto quando il cielo è sereno.
+                Sembra quasi che il Monviso si fonda con il cielo azzurro, creando una vista straordinaria che evoca una sensazione di serenità e bellezza.
+                </p>
+            </div>
+            <div class="img_camera blockTwo">
+              <img src="img/camera2.jpg" alt="" style="width: 50%;">
+              <img src="img/camera3.jpg" alt="" style="width: 50%;">
+            </div>
+          </div>
+          <div class="paragrafo_camera orizzontale">
+            <h1 style="font-family: Dancing Script;" class="">Monviso</h1>
+            <p>
+              Il Monviso, con la sua maestosa e inconfondibile forma piramidale, incarna la bellezza senza tempo delle Alpi italiane.
+              Il colore azzurro chiaro della camera richiama la vetta, soprattutto quando il cielo è sereno.
+              Sembra quasi che il Monviso si fonda con il cielo azzurro, creando una vista straordinaria che evoca una sensazione di serenità e bellezza.
+              </p>
+          </div>
+        </div>
+        <div class="title"><h1 style="font-family: Dancing Script; display: none; text-align: center;" class="verticale">Castagna</h1></div>
+        <div class="img_camera_main">
+          <div class="paragrafo_camera orizzontale">
+            <h1 style="font-family: Dancing Script;">Castagna</h1>
+            <p>
+              Nel cuore delle dolci colline del Piemonte, la castagna si presenta come un gioiello autunnale, donando alla regione un tocco di calore e tradizione. 
+              Le sue forme morbide e rotonde richiamano l'abbraccio della terra, mentre il loro colore marrone, profondo e avvolgente, evoca la ricchezza della terra piemontese.
+              </p>
+          </div>
+          <div>
+            <div class="img_camera blockOne">
+              <img src="img/camera5.jpg" alt="" style="width: 65%;">
+              <img src="img/camera6.jpg" alt="" style="width: 35%;">
+            </div>
+            <div class="paragrafo_camera verticale" style="display: none;">
+
+              <p>
+                Nel cuore delle dolci colline del Piemonte, la castagna si presenta come un gioiello autunnale, donando alla regione un tocco di calore e tradizione. 
+                Le sue forme morbide e rotonde richiamano l'abbraccio della terra, mentre il loro colore marrone, profondo e avvolgente, evoca la ricchezza della terra piemontese.
+                </p>
+            </div>
+            <div class="img_camera blockTwo">
+              <img src="img/camera7.jpg" alt="" style="width: 50%;">
+              <img src="img/camera8.jpg" alt="" style="width: 50%;">
+            </div>
+          </div>
+        </div>
+        <div class="title"><h1 style="font-family: Dancing Script; display: none; text-align: center;" class="verticale">Lavanda</h1></div>
+        <div class="img_camera_main">
+          <div>
+            <div class="img_camera blockOne">
+              <img src="img/camera9.jpg" alt="" style="width: 65%;">
+              <img src="img/camera10.jpg" alt="" style="width: 35%;">
+            </div>
+            <div class="paragrafo_camera verticale" style="display: none;">
+              <p>
+                Nel cuore della Provenza, la lavanda colora i campi con il suo viola vibrante. La sua fragranza avvolge l'aria al tramonto, creando un'atmosfera magica. 
+                I fiori ondeggiano con grazia sotto la carezza del vento, mentre il profumo intenso culla i sensi. 
+                La lavanda diventa così una poesia visiva e olfattiva, un'esperienza breve ma intensa che incanta l'anima.</p>
+            </div>
+            <div class="img_camera blockTwo">
+              <img src="img/camera11.jpg" alt="" style="width: 50%;">
+              <img src="img/camera12.jpg" alt="" style="width: 50%;">
+            </div>
+          </div>
+          <div class="paragrafo_camera  orizzontale">
+            <h1 style="font-family: Dancing Script;">Lavanda</h1>
+            <p>
+              Nel cuore della Provenza, la lavanda colora i campi con il suo viola vibrante. La sua fragranza avvolge l'aria al tramonto, creando un'atmosfera magica. 
+              I fiori ondeggiano con grazia sotto la carezza del vento, mentre il profumo intenso culla i sensi. 
+              La lavanda diventa così una poesia visiva e olfattiva, un'esperienza breve ma intensa che incanta l'anima.</p>
+          </div>
+        </div>
+        <div class="title"><h1 style="font-family: Dancing Script; display: none; text-align: center;" class="verticale">Genzianella</h1></div>
+        <div class="img_camera_main">
+          <div class="paragrafo_camera orizzontale">
+            <h1 style="font-family: Dancing Script;">Genzianella</h1>
+            <p>
+              Nei prati alpini, la genzianella sfoggia la sua bellezza resistente. I suoi fiori azzurri, come gemme rare, punteggiano l'erba verde, sfidando l'alta quota con grazia. 
+              Il loro profumo fresco si mescola all'aria di montagna, creando un'atmosfera unica. 
+              La genzianella, con il suo azzurro intenso, è un miracolo alpino, un tocco di colore nella severità montana.
+            </p>
+          </div>
+          <div>
+            <div class="img_camera blockOne">
+              <img src="img/camera13.jpg" alt="" style="width: 65%;">
+              <img src="img/camera14.jpg" alt="" style="width: 35%;">
+            </div>
+            <div class="paragrafo_camera verticale" style="display: none;">
+              <p>
+                Nei prati alpini, la genzianella sfoggia la sua bellezza resistente. I suoi fiori azzurri, come gemme rare, punteggiano l'erba verde, sfidando l'alta quota con grazia. 
+                Il loro profumo fresco si mescola all'aria di montagna, creando un'atmosfera unica. 
+                La genzianella, con il suo azzurro intenso, è un miracolo alpino, un tocco di colore nella severità montana.
+              </p>
+            </div>
+            <div class="img_camera blockTwo">
+              <img src="img/camera15.jpg" alt="" style="width: 50%;">
+              <img src="img/camera16.jpg" alt="" style="width: 50%;">
+            </div>
+          </div>
+        </div>
+        <div class="paragrafo_camera" style="width: 70%; margin: 0 auto;">
+          <h1 style="font-size: 38pt; font-family: Dancing Script; padding-top: 30px; text-align: center;">Camere con cucina</h1>
+          <br>
+          <p>
+            Qua sotto trovate le nostre 4 room premium con bagno, patio all'aperto con poltroncine, aria condizionata, tende oscuranti, pavimento marmolizzato,
+            riscaldamento a pavimento, VMC (ventilazione meccanica controllata) per una migliore qualità dell'aria, 
+            una sontuosa camera da letto con tv e letto matrimoniale con materasso e cuscino antiallergeni in latèx memory.  
+          </p>
+        </div>
+    </div>
+
+    <div id="content_restaurant" class="nascosto">
+      <div class="desc_ristorante">
+        <div class="paragraph">
+          <h4 class="right scopri">Cucina</h4>
+          <br>
+            <p>Il posto dove passione per l'enogastronomia e atmosfera ospitale si incontrano. Prenota un'esperienza culinaria unica.</p>
+        </div>
+        <img src="img/rest1.JPG" alt="" style="width: 50%;">
+      </div>
+      <br>
+      <div class="dett_ristorante">
+        <div class="opt_ristorante">
+          <img src="img/rest2.jpg" alt="" class="img_rest orizzontale">
+          <h4>Vivi la tua cena in intimità solo con i tuoi cari in un'atmosfera rilassata</h4>
+          <img src="img/rest2.jpg" alt="" class="img_rest verticale">
+        </div>
+        <div class="opt_ristorante">
+          <h4>Fate un'esperienza culinaria tra i sapori tradizionali piemontesi</h4>
+          <img src="img/rest3.jpg" alt="" class="img_rest">
+        </div>
+        <div class="opt_ristorante">
+          <img src="img/rest5.jpg" alt="" class="img_rest orizzontale">
+          <h4>Uno Chef Personale sarà pronto a servire le migliori portate per gli ospiti</h4>
+          <img src="img/rest5.jpg" alt="" class="img_rest verticale">
+        </div>
+        <div class="opt_ristorante">
+          <h4>Il nostro servizio è curato, preciso e attento ai singoli dettagli</h4>
+          <img src="img/rest7.jpg" alt="" class="img_rest">
+        </div>
+      </div>
+    </div>
+
+    <div id="content_storia" class="nascosto">
+      <p>Storia</p>
+    </div>
+
+    <div id="content_territorio" class="nascosto">
+      <p>Territorio</p>
+    </div>
+
+    <!-- <div id="content_attivita" class="nascosto">
+    <p>Attività</p>
+    </div> -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer" style="padding: 25px; text-align: center;" id="fondo">
+      <div style="display: flex; width: 100%; align-items: center; justify-content: center;" class="column_father">
+        <!-- <div id="mappa" style="width: 400px; height: 200px;" class="map"></div> -->
+        <div style="text-align: left; color: black; margin-left: 25px;">
+          <p class="text-uppercase mb-4 font-weight-bold" style="text-align: center;">Contatti</p>
+          <a href="https://www.google.it/maps/place/Le+Ghie/@44.4358072,7.8652908,17z/data=!3m1!4b1!4m6!3m5!1s0x12d29f67137d9b2f:0xfbd31a9ac8786111!8m2!3d44.4358034!4d7.8678657!16s%2Fg%2F11l5hdgqym?entry=ttu" 
+          style="color: gray;" target="_blank"><i class="fas fa-home mr-3"></i>Strada S. Quintino, 67, Mondovì, CN 12084</a><br><br>
+          <a style="color: gray;" href="mailto:info@leghie.it" target="_blank"><i class="fas fa-envelope mr-3"></i> info@leghie.it</a><br><br>
+          <a style="color: gray;" href="tel:+393501731796" target="_blank"><i class="fas fa-phone mr-3"></i> +39 350 173 1796</a><br><br>
+          <div class="col-6 text-right" style="display: flex;">
+            <a href="https://www.instagram.com/leghie.it/" target="_blank" style="color: #C13584;">
+                <i class="fab fa-instagram fa-2x"></i>&nbsp;&nbsp;
+            </a>
+            <a href="https://wa.me/+393501731796/" target="_blank" style="color: #25D366;">
+              <i class="fab fa-whatsapp fa-2x"></i>&nbsp;&nbsp;
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61551774870701" target="_blank" style="color: #4267B2;">
+              <i class="fab fa-facebook fa-2x"></i>&nbsp;&nbsp;
+            </a>
+        </div>
+      </div>
+    </footer>
+    <div style="width: 100%; text-align: center;" class="finale">
+      <a style="color: gray; padding: 20px;">© 2023 Le Ghie - P.Iva 04076030040</a>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+/* SLOGAN */
+@media (max-width: 510px){
+    .slogan{
+        font-size: 22pt; 
+    }
+
+    .blockOne{
+        margin: 0;
+        padding: 0;
+    }
+    .blockOne img{
+        margin: 0;
+        padding: 3px;
+    }.blockTwo{
+        margin: 0;
+        padding: 3px;
+    }
+
+    .paragrafo_camera{
+        font-size: 12pt;
+    }
+}
+
+/* DESCRIZIONI */
+/* SCOPRI PIATTI/STANZE */
+@media (max-width: 1040px){
+    .desc{
+        font-size: 12pt;
+    }
+    .scopri{
+        font-size: 22pt;
+    }
+    .footer{
+        font-size: 11pt;
+    }
+    .finale{
+        font-size: 11pt;
+    }
+
+    .content_storia .son{
+        height: 20vh !important;
+    }
+
+
+}
+
+/* IMMAGINI */
+@media (max-width: 595px){
+    /* IMMAGINI IN RIGA*/
+    .content_img_home{
+        flex-wrap: wrap;
+    }
+    .content_img_home .imgs {
+        width: 35vw !important;
+        margin: 10px;
+
+    }
+    .content_img_home video {
+        width: 35vw !important;
+        margin: 10px;
+
+    }
+    /* IMMAGINI PARAGRAFI*/
+    .content_paragrafi, .content_storia {
+        flex-direction: column;
+    }
+    .content_storia .son{
+        height: 20vh !important;
+    }
+    .content_paragrafi img, video{
+        width: 70vw !important;
+    }
+
+    .content_paragrafi .verticale{
+        display: block;
+        margin-right: 0 !important;
+    }
+    
+    .content_paragrafi .orizzontale{
+        display: none;
+    }
+
+    /* TERRITORIO */
+    .carousel {
+        width: 80% !important;
+    }
+
+    .finale .footer{
+        font-size: 8pt;
+    }
+
+    /*CAMERE*/
+    .blockTwo{
+        flex-direction: column;
+    }.blockTwo img{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 325px){
+    .navbar-brand{
+        font-size: 20pt !important;
+    }
+    .desc{
+        font-size: 8pt;
+    }
+    .scopri, .slogan{
+        font-size: 18pt;
+    }
+    .opt_ristorante h4{
+        font-size: 15pt;
+    }
+    .paragrafo_camera{
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 385px){
+    .intro{
+        font-size: 10pt;
+    }
+    .footer{
+        font-size: 10pt;
+    }
+    .finale {
+        font-size: 10pt;
+    }
+    .column_father{
+        flex-direction: column;
+    }
+    .column_father .map {
+        width: 75% !important;
+        align-items: center !important;
+    }
+}
+
+@media (max-width: 285px){
+    .intro{
+        font-size: 7pt;
+    }
+    .content_img_home{
+        flex-wrap: wrap;
+    }
+    .content_img_home .imgs {
+        width: 70vw !important;
+        margin: 10px;
+
+    }
+    .content_img_home video {
+        width: 70vw !important;
+        margin: 10px;
+
+    }
+    .content_paragrafi img, video{
+        width: 80vw !important;
+    }
+
+    .verticale{
+        display: block;
+    }
+    
+    .orizzontale{
+        display: none;
+    }
+    .home-vista{
+        width: 80vw;
+    }
+    .navbar-brand{
+        font-size: 16pt !important;
+    }
+
+    .opt_ristorante h4, .scopri{
+        font-size: 12pt;
+    }
+}
+
+/* Media query per schermi più larghi, ad esempio tablet o desktop */
+@media (max-width: 1200px) {
+    .desc_ristorante {
+        flex-direction: column; /* Torna alla direzione della riga per il layout desktop */
+        justify-content: space-around;
+    }.desc_ristorante .right, p{
+        text-align: center;
+    }.desc_ristorante img{
+        min-width: 250px;
+    }
+    .opt_ristorante {
+        flex-direction: column;
+        width: 50%;
+    }
+    .img_rest{
+        width: 100%;
+        height: auto;
+        min-width: 250px;
+    }
+    .opt_ristorante .verticale{
+        display: block;
+    }
+    
+    .opt_ristorante .orizzontale{
+        display: none;
+    }
+}
+
+@media (max-width: 1125px){
+    .img_camera_main .verticale{
+        display: block !important;
+    }
+    
+    .img_camera_main .orizzontale{
+        display: none !important
+    }
+    .title .verticale{
+        display: block !important;
+    }
+}
+
